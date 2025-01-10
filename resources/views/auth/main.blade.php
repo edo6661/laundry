@@ -22,27 +22,12 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="">{{ config('app.name') }}</a>
+            <a class="navbar-brand" href="{{url('')}}">W@R Laundry</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mr-sm-3 mb-2 mb-sm-0">
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                @lang('auth.langtext')
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="{{url('id')}}">Indonesia</a>
-                                <a class="dropdown-item" href="{{url('en')}}">English</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+
         </div>
     </nav>
 

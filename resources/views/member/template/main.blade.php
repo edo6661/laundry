@@ -31,7 +31,7 @@
             <!-- Brand Logo -->
             <a href="" class="brand-link mt-2">
                 <i class="fas fa-tshirt brand-image mt-1 ml-3"></i>
-                <h4 class="brand-text text-center">{{ config('app.name') }}</h4>
+                <h4 class="brand-text text-center">W@R Laundry</h4>
             </a>
 
             <!-- Sidebar -->
@@ -72,6 +72,6 @@
 
     @push('js')
 
-    </body>
+</body>
 
-    </html>
+</html>

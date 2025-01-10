@@ -47,18 +47,18 @@
                         @endphp
 
                         @foreach ($transaction->transaction_details as $item)
-                            <tr>
-                                <td>{{ $loop->iteration }}</td>
-                                <td>{{ $item->price_list->item->name }}</td>
-                                <td>{{ $item->price_list->service->name }}</td>
-                                <td>{{ $item->price_list->category->name }}</td>
-                                <td>{{ $item->quantity }}</td>
-                                <td>{{ $item->getFormattedPrice() }}</td>
-                                <td>{{ $item->getFormattedSubTotal() }}</td>
-                            </tr>
-                            @php
-                                $tot += $item->sub_total;
-                            @endphp
+                                                <tr>
+                                                    <td>{{ $loop->iteration }}</td>
+                                                    <td>{{ $item->price_list->item->name }}</td>
+                                                    <td>{{ $item->price_list->service->name }}</td>
+                                                    <td>{{ $item->price_list->category->name }}</td>
+                                                    <td>{{ $item->quantity }}</td>
+                                                    <td>{{ $item->getFormattedPrice() }}</td>
+                                                    <td>{{ $item->getFormattedSubTotal() }}</td>
+                                                </tr>
+                                                @php
+                                                    $tot += $item->sub_total;
+                                                @endphp
                         @endforeach
 
                         <tr>
@@ -87,7 +87,7 @@
         </div>
         <div class="row mt-3">
             <div class="col-4 text-center">
-                <p>Badung, {{ date('d F Y') }}</p>
+                <p>Tangerang, {{ date('d F Y') }}</p>
                 <br>
                 <br>
                 <br>
@@ -95,7 +95,7 @@
             </div>
             <div class="col-4"></div>
             <div class="col-4 text-center">
-                <p>Badung, {{ date('d F Y') }}</p>
+                <p>Tangerang, {{ date('d F Y') }}</p>
                 <br>
                 <br>
                 <br>

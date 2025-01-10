@@ -30,25 +30,13 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="">{{ config('app.name') }}</a>
+            <a class="navbar-brand" href="">W@R Laundry</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mr-sm-3 mb-2 mb-sm-0">
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                @lang('landing.langtext')
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="{{url('id')}}">Indonesia</a>
-                                <a class="dropdown-item" href="{{url('en')}}">English</a>
-                            </div>
-                        </div>
-                    </li>
                     <li class="nav-item">
                         <a class="btn btn-success" href="{{url('login')}}">@lang('landing.loginOrRegister')</a>
                     </li>
@@ -62,7 +50,7 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="display-3 text-white mt-5 mb-2">@lang('landing.welcome')</h1>
+                    <h1 class="display-4 text-white mt-5 mb-2">Selamat datang di W@R Laundry</h1>
                     <p class="lead mb-5 text-white-50">@lang('landing.tagline')</p>
                 </div>
                 <div class="col-lg-6">
@@ -176,7 +164,7 @@
             <div class="row">
                 <div class="col-md-6 mb-4 mb-sm-0">
                     <h5>Alamat</h5>
-                    <p>Jalan Raya Sempidi No. 69 Lukluk, Mengwi, Badung, Bali</p>
+                    <p>Margasari, Kecamatan Karawaci, Kota Tangerang, Banten</p>
                     <br>
                     <h5>Kontak</h5>
                     <p>laundryxyz@gmail.com</p>
@@ -185,9 +173,9 @@
                 </div>
                 <div class="col-md-6">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.0551329606237!2d115.18456241433559!3d-8.59069798958535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2394d265755b3%3A0xb025730a3074e799!2sJl.%20Raya%20Lukluk%20-%20Sempidi%2C%20Lukluk%2C%20Kec.%20Mengwi%2C%20Kabupaten%20Badung%2C%20Bali!5e0!3m2!1sid!2sid!4v1589257661013!5m2!1sid!2sid"
-                        width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.637956807143!2d106.60548937404329!3d-6.179191893808246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fed8e67cb0ad%3A0x2888b42a70065bd2!2sGlobal%20Institute%20%7C%20Institut%20Teknologi%20dan%20Bisnis%20Bina%20Sarana%20Global!5e0!3m2!1sid!2sid!4v1732775431805!5m2!1sid!2sid"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
