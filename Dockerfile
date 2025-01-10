@@ -14,11 +14,15 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd zip
 
+RUN apt-get update && apt-get install -y php-fpm
+
+
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
 
 COPY composer.json composer.lock ./
+
 
 RUN composer install --no-dev --optimize-autoloader --no-scripts
 
