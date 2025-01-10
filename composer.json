@@ -10,6 +10,7 @@
     "require": {
         "php": "^8.2",
         "ext-json": "*",
+        "heroku/heroku-buildpack-php": "*",
         "ext-mbstring": "*",
         "ext-xml": "*",
         "ext-zip": "*",
